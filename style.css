@@ -1,0 +1,114 @@
+* {
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    
+}
+
+
+.container {  
+    max-width: 600px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: darkgray;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "screen screen screen screen"
+      "clear clear delete delete"
+      "seven eight nine divide"
+      "four five six multiply"
+      "one two three subtract"
+      "decimal zero equal plus";
+}
+
+.screen { 
+    grid-area: screen; 
+    width: 600px;
+    height: 100px;
+    background-color: darkcyan;
+    display: flex;
+    
+}
+
+.inner-screen {
+    width: 560px;
+    height: 90px;
+    border-radius: 2px;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: right;
+    align-items: end;    
+    flex-direction: column;
+}
+
+.log {
+    display: flex;
+    justify-content: flex-end;
+    width: 560px;
+    padding-right: 10px;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.main {
+    display: flex;
+    justify-content: flex-end;    
+    width: 560px;
+    font-size: 50px;
+    padding-right: 10px;
+}
+
+.delete { 
+    grid-area: delete;
+    width: 200px !important; 
+    background-color: lavender !important;
+}
+.clear { 
+    grid-area: clear;
+    width: 200px !important;
+    background-color: pink !important;
+    
+}
+.seven { grid-area: seven; }
+.eight { grid-area: eight; }
+.nine { grid-area: nine; }
+.divide { grid-area: divide; }
+.four { grid-area: four; }
+.five { grid-area: five; }
+.six { grid-area: six; }
+.multiply { grid-area: multiply; }
+.one { grid-area: one; }
+.two { grid-area: two; }
+.three { grid-area: three; }
+.subtract { grid-area: subtract; }
+.decimal { grid-area: decimal; }
+.zero { grid-area: zero; }
+.equal { grid-area: equal; }
+.plus { grid-area: plus; }
+
+.button {
+    background-color: lightgray;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.screen-log {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+}
