@@ -1,5 +1,6 @@
 # Thor's Calculator
 > "Nature hates calculators" -Odin, probably
+> https://marc714.github.io/odin-calculator/
 
 ## Summary 
 An on-screen calculator using JavaScript, HTML, and CSS.
