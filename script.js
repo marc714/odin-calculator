@@ -299,3 +299,18 @@ zero.addEventListener('click', function(){
 });
 
 
+
+window.addEventListener('keydown', function(e) {
+    //const audio = document.querySelector(`audio[data-key="${e.key}"]`);
+    const audio = document.querySelector(`audio[data-key="${e.key}"]`);
+    //console.log(e);
+    if(!audio) return;
+    audio.play();
+});
+
+//const article = document.querySelector('#electric-cars');
+//console.log(article.dataset.columns);
+
+// https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
+/* To get a data attribute through the dataset object, get the property by the part of the attribute name after data- (note that dashes are converted to camelCase). */
+
