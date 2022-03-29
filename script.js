@@ -314,3 +314,5 @@ window.addEventListener('keydown', function(e) {
 // https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes
 /* To get a data attribute through the dataset object, get the property by the part of the attribute name after data- (note that dashes are converted to camelCase). */
 
+// https://stackoverflow.com/questions/14809528/why-does-js-code-var-a-document-queryselectoradata-a-1-cause-error
+
