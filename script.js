@@ -316,3 +316,7 @@ window.addEventListener('keydown', function(e) {
 
 // https://stackoverflow.com/questions/14809528/why-does-js-code-var-a-document-queryselectoradata-a-1-cause-error
 
+//console.log(nine.textContent); 
+// you can append the html text directly into something like a function, instead of using a displayMemory function to store the input.
+
+// https://github.com/michalosman/calculator/blob/master/script.js
